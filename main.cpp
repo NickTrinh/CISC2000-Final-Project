@@ -65,7 +65,7 @@ int main() {
         courses[crn] = course;
     }
 
-    // Overload << to write the Student object +1
+    // Overload << to write the Student object to studentOutput.txt
     ofstream outFile("studentOutput.txt");
     for (auto student : students) {
         outFile << "Name: " << student.getFirstName() << " " << student.getLastName() << endl;
@@ -81,9 +81,12 @@ int main() {
     Student student("\" Doe, John\"");
     student.addCourse("40115");
     student.addCourse("11234");
+    student.addCourse("40121");
+    student.addCourse("36380");
+    student.addCourse("49837");
 
 
-    // Appending the Student object to studentOutput.txt
+    // Appending new Student object to studentOutput.txt
     ofstream appendFile("studentOutput.txt", ios::app);
     if (appendFile.is_open()) {
         appendFile << "Name: " << student.getFirstName() << " " << student.getLastName() << endl;
@@ -95,5 +98,18 @@ int main() {
         appendFile << "\n\n";
         appendFile.close();
     }
+
+    ofstream JohnDoeFile("CoursesForJohnDoe.txt");
+    if (JohnDoeFile.is_open()) {
+        JohnDoeFile << "Courses for " << student.getFirstName() << " " << student.getLastName() << ":\n";
+        cout<< "Courses info for " << student.getFirstName() << " " << student.getLastName() << ":\n";
+        for (auto crn : student.getCourses()) {
+            JohnDoeFile << courses[crn].getDescription() << "\n";
+            courses[crn].display();
+        }
+        JohnDoeFile << "\n\n";
+        JohnDoeFile.close();
+    }
+
     return 0;
 }

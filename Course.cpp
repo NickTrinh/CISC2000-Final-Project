@@ -56,5 +56,5 @@ void Course::display() const {
     cout << "Term: " << term << endl;
     cout << "Instructor: " << instructor << endl;
     cout << "Meeting Times: " << meetingTimes << endl;
-    cout << "Time: " << time << endl;
+    cout << "Time: " << time << endl <<endl;
 }
