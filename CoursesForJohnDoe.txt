@@ -1,8 +1,0 @@
-Courses for John Doe:
-Computer Science I
-Database Systems
-Cyberspace: Issues and Ethics
-Operating Systems
-Information and Data Management
-
-

@@ -1,3 +1,4 @@
+//Nick Trinh
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
 

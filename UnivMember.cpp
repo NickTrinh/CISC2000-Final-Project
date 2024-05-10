@@ -1,3 +1,4 @@
+//Nick Trinh
 #include "UnivMember.h"
 #include <iostream>
 #include <sstream>

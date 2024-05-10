@@ -1,3 +1,4 @@
+//Nick Trinh
 #include "Professor.h"
 #include <iostream>
 

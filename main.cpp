@@ -1,3 +1,4 @@
+//Nick Trinh
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -8,7 +9,9 @@
 #include "Course.h"
 
 using namespace std;
-
+//Run with g++ main.cpp UnivMember.cpp ID.cpp Name.cpp Student.cpp Professor.cpp Course.cpp -o program
+//./program
+//
 int main() {
     ifstream studentsFile("StudentsWithCRNs.txt");
     ifstream coursesFile("CoursesFall2023Tab.txt");

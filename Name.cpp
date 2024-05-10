@@ -1,3 +1,4 @@
+//Nick Trinh
 #include "Name.h"
 #include <iostream>
 #include <sstream>
