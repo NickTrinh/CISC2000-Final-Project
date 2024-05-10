@@ -79,18 +79,21 @@ int main() {
     outFile.close();
 
     Student student("\" Doe, John\"");
-    student.addCourse("Computer Science II");
-    student.addCourse("Data Structures");
+    student.addCourse("40115");
+    student.addCourse("11234");
 
-    cout << student << endl;
 
-    // Writing the Student object to a file
-    ofstream outputFile("studentPrintOverloadTest.txt");
-    if (outputFile.is_open()) {
-        outputFile << student << endl;
-        outputFile.close();
+    // Appending the Student object to studentOutput.txt
+    ofstream appendFile("studentOutput.txt", ios::app);
+    if (appendFile.is_open()) {
+        appendFile << "Name: " << student.getFirstName() << " " << student.getLastName() << endl;
+        appendFile << "ID: " << student.getUnivID() << endl;
+        appendFile << "Role: " << student.getRole()<< endl << "Courses: \n";
+        for (auto crn : student.getCourses()) {
+            appendFile << courses[crn].getDescription() << "\n";
+        }
+        appendFile << "\n\n";
+        appendFile.close();
     }
-
-
     return 0;
 }

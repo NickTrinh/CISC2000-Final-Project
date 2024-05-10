@@ -1,2 +1,0 @@
-John, Doe, A10000656, Student, Computer Science II, Data Structures
-Jane, Smith, A10000657, Student, Computer Science II, Theory of Computation

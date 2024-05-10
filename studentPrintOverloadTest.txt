@@ -1,5 +1,0 @@
-Name: John Doe
-ID: A10000328
-Role: Student
-Courses: Computer Science II, Data Structures
-

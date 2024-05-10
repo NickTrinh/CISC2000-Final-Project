@@ -3606,3 +3606,11 @@ Brains and Behavior in Beasts and Bots
 Computer Science I
 
 
+Name: John Doe
+ID: A10000328
+Role: Student
+Courses: 
+Computer Science I
+Database Systems
+
+
